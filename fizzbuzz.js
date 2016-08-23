@@ -1,24 +1,24 @@
 
-$(document).ready(function() {
+var FizzBuzz = document.querySelector("#fizzbuzz");
 
 for (var i = 1; i < 100; i++) {
 	if (i % 15 == 0) {
-		console.log("fizz buzz");
+		FizzBuzz.innerHTML += "fizz buzz <br />";
 	}
 	else if (i % 3 == 0) {
-		console.log("fizz");
+		FizzBuzz.innerHTML += "fizz <br />";
 	}	
 	else if (i % 5 == 0) {
-		console.log("buzz");
+		FizzBuzz.innerHTML += "buzz <br />";
 	}
 	else {
-		console.log(i);
+		FizzBuzz.innerHTML += i + "<br />";
 	}
-	console.log(",")
 }
 
 
- });
+
+
 
 
 
